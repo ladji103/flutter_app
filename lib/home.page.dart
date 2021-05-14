@@ -24,18 +24,16 @@ class _HomePageState extends State<HomePage> {
           margin: EdgeInsets.all(10.0),
           color: Colors.white38,
           child: Center(
-            child: Card(
-              elevation: 15.5,
-              color: Colors.orange,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(30.0))),
-              child: Container(
-                height: MediaQuery.of(context).size.height / 2,
-                child: Image.asset('assets/images/mercedes.jpg',
-                    fit: BoxFit.fitHeight),
-              ),
-            ),
-          )),
+              child: Text(
+            'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+            textAlign: TextAlign.center,
+            textScaleFactor: 1.5,
+            maxLines: 2,
+            style: TextStyle(
+                color: Colors.black,
+                fontSize: 20.0,
+                fontStyle: FontStyle.italic),
+          ))),
     );
   }
 }
