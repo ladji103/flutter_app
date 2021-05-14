@@ -21,7 +21,19 @@ class _HomePageState extends State<HomePage> {
         elevation: 15.0,
         centerTitle: true,
       ),
-      body: Center(child: ColumnExample()),
+      body: Center(
+          child: ColumnExample(
+        stateColor: true,
+      )),
+      floatingActionButton: FloatingActionButton(
+        elevation: 8.0,
+        child: Icon(Icons.add),
+        onPressed: () {
+          setState(() {
+          });
+        },
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }
