@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/column.example.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -20,22 +21,7 @@ class _HomePageState extends State<HomePage> {
         elevation: 15.0,
         centerTitle: true,
       ),
-      body: Container(
-          margin: EdgeInsets.all(10.0),
-          color: Colors.white38,
-          child: Center(
-            child: Card(
-              elevation: 15.5,
-              color: Colors.orange,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(30.0))),
-              child: Container(
-                height: MediaQuery.of(context).size.height / 2,
-                child: Image.asset('assets/images/mercedes.jpg',
-                    fit: BoxFit.fitHeight),
-              ),
-            ),
-          )),
+      body: Center(child: ColumnExample()),
     );
   }
 }
