@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/column.example.dart';
+import 'package:flutter_app/popup.page.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -21,16 +22,14 @@ class _HomePageState extends State<HomePage> {
         elevation: 15.0,
         centerTitle: true,
       ),
-      body: Center(
-          child: ColumnExample(
-        stateColor: true,
-      )),
+      body: Center(child: PopupPage()
+          // ColumnExample(stateColor: true,)
+          ),
       floatingActionButton: FloatingActionButton(
         elevation: 8.0,
         child: Icon(Icons.add),
         onPressed: () {
-          setState(() {
-          });
+          setState(() {});
         },
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
